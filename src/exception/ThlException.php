@@ -6,7 +6,7 @@
  * Time: 下午4:21
  */
 
-namespace thl\Exception;
+namespace thl\exception;
 
 
 use Throwable;

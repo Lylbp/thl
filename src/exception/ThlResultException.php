@@ -6,11 +6,11 @@
  * Time: 下午4:21
  */
 
-namespace thl\Exception;
+namespace thl\exception;
 
 
 
-class ThlResultException extends \Exception
+class ThlResultException extends ThlException
 {
     public function __construct($code,$message)
     {
