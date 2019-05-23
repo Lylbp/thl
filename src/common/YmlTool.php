@@ -18,20 +18,18 @@ class YmlTool
 {
     /**
      * @param $key
-     * @param $ymlName
+     * @param $ymlPath
      * @return string
      * @throws ThlResultException
      */
-    public static function getParameters($key,$ymlName = ''){
-        $documentRoot = $_SERVER['DOCUMENT_ROOT']."/thl/";
-        require_once $documentRoot . 'app/bootstrap.php';
-
+    public static function getParameters($key,$ymlPath = ''){
+        $documentRoot = $_SERVER['DOCUMENT_ROOT'];
         $params = null;
         try {
-            if (empty($ymlName)){
-                $ymlName = 'thlConfig.yml';
+            if (empty($ymlPath)){
+                $ymlPath = 'thl/config/thlConfig.yml';
             }
-            $params = Yaml::parse($documentRoot. 'config/'.$ymlName);
+            $params = Yaml::parse($documentRoot. '/'.$ymlPath);
 
             if (!is_array($params)){
                 throw new ThlResultException(

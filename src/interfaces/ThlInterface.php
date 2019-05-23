@@ -5,6 +5,7 @@
  * Date: 2019/5/22
  * Time: 下午12:14
  */
+namespace thl\interfaces;
 
 interface ThlInterface
 {
