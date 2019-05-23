@@ -2,7 +2,8 @@
 /composer.phar
 /composer.lock
 
-/src/test
+#测试
+/test.php
 
 # Intellij
 .idea

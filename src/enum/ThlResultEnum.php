@@ -20,6 +20,13 @@ class ThlResultEnum extends Enum
     const ERROR_CODE = "1";
     const ERROR_MSG = "操作失败";
 
+    //配置文件相关
+    const PARAM_CONFIG_FORMAT_ERROR_CODE = "101";
+    const PARAM_CONFIG_FORMAT_ERROR_MSG = "配置文件格式错误:必须以parameters开始";
+
+    const PARAM_PARSE_ERROR_CODE = "102";
+    const PARAM_PARSE_ERROR_MSG = "配置文件解析错误";
+
     public function __construct($value)
     {
         parent::__construct($value);
